@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Yongki Irfan Maulana</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .profile-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-2px);
+        }
+        
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div class="min-h-full gradient-bg"><!-- Header Section -->
+   <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+     <div class="text-center"><!-- Profile Avatar -->
+      <div class="mb-8">
+       <div class="w-32 h-32 mx-auto bg-white rounded-full flex items-center justify-center card-shadow">
+        <svg class="w-20 h-20 text-indigo-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>
+       </div>
+      </div><!-- Name and Title -->
+      <h1 id="nama-display" class="text-4xl md:text-6xl font-bold text-white mb-4">YONGKI IRFAN MAULANA</h1>
+      <p id="tagline-display" class="text-xl md:text-2xl text-white opacity-90 mb-6">Siswa Berprestasi &amp; Pembelajar Aktif</p><!-- Quick Info -->
+      <div class="flex flex-wrap justify-center gap-4 text-white">
+       <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><span class="font-semibold">Kelas:</span> <span id="kelas-display">IX (Sembilan)</span>
+       </div>
+       <div class="bg-white bg-opacity-20 px-4 py-2 rounded-full"><span class="font-semibold">Umur:</span> <span id="umur-display">14</span> tahun
+       </div>
+      </div>
+     </div>
+    </div>
+   </header><!-- Main Content -->
+   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8"><!-- Profile Card -->
+     <div class="lg:col-span-1">
+      <div class="profile-card rounded-2xl p-8 card-shadow">
+       <h2 class="text-2xl font-bold text-gray-800 mb-6">Profil Saya</h2>
+       <div class="space-y-4">
+        <div class="flex items-center">
+         <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
+          <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-600">Nama Lengkap</p>
+          <p id="nama-card" class="font-semibold text-gray-800">Yongki Irfan Maulana</p>
+         </div>
+        </div>
+        <div class="flex items-center">
+         <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+          <svg class="w-4 h-4 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-600">Sekolah</p>
+          <p id="sekolah-display" class="font-semibold text-gray-800">MTSN 3 IBS PKMKK</p>
+         </div>
+        </div>
+        <div class="flex items-center">
+         <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+          <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-600">Kelas &amp; Umur</p>
+          <p class="font-semibold text-gray-800"><span id="kelas-card">IX (Sembilan)</span> • <span id="umur-card">14</span> tahun</p>
+         </div>
+        </div>
+        <div class="flex items-center">
+         <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+          <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg>
+         </div>
+         <div>
+          <p class="text-sm text-gray-600">Jenis Kelamin</p>
+          <p class="font-semibold text-gray-800">Laki-laki</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div><!-- Content Area -->
+     <div class="lg:col-span-2 space-y-8"><!-- About Section -->
+      <div class="bg-white rounded-2xl p-8 card-shadow section-card">
+       <h2 class="text-2xl font-bold text-gray-800 mb-6">Tentang Saya</h2>
+       <p id="tentang-display" class="text-gray-600 leading-relaxed text-lg">Halo! Saya Yongki Irfan Maulana, seorang siswa kelas IX di MTSN 3 IBS PKMKK. Saya adalah pribadi yang antusias dalam belajar dan selalu berusaha memberikan yang terbaik dalam setiap kegiatan. Saya memiliki minat yang besar terhadap teknologi, sains, dan pengembangan diri.</p>
+      </div><!-- Skills Section -->
+      <div class="bg-white rounded-2xl p-8 card-shadow section-card">
+       <h2 class="text-2xl font-bold text-gray-800 mb-6">Keahlian &amp; Minat</h2>
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="skill-badge bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-xl text-center font-semibold">
+         ⚽ Futsal
+        </div>
+        <div class="skill-badge bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-4 rounded-xl text-center font-semibold">
+         🏃‍♂️ Lari
+        </div>
+        <div class="skill-badge bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-4 rounded-xl text-center font-semibold">
+         🏐 Volly
+        </div>
+       </div>
+      </div><!-- Goals Section -->
+      <div class="bg-white rounded-2xl p-8 card-shadow section-card">
+       <h2 class="text-2xl font-bold text-gray-800 mb-6">Tujuan &amp; Cita-cita</h2>
+       <div class="space-y-4">
+        <div class="flex items-start">
+         <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1">
+          <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+         </div>
+         <p class="text-gray-600">🪖 Menjadi anggota TNI AD (Tentara Nasional Indonesia Angkatan Darat)</p>
+        </div>
+        <div class="flex items-start">
+         <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+          <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+         </div>
+         <p class="text-gray-600">⚽ Menjadi pemain bola profesional dan mengharumkan nama bangsa</p>
+        </div>
+        <div class="flex items-start">
+         <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+          <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+         </div>
+         <p class="text-gray-600">💼 Menjadi Bos Muda yang sukses dan menginspirasi generasi muda</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </main><!-- Footer -->
+   <footer class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+     <div class="text-center text-white">
+      <p class="text-lg font-semibold mb-2">Yongki Irfan Maulana</p>
+      <p class="opacity-80">Siswa MTSN 3 IBS PKMKK • Kelas IX • 2024</p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            nama_lengkap: "YONGKI IRFAN MAULANA",
+            kelas: "IX (Sembilan)",
+            umur: "14",
+            sekolah: "MTSN 3 IBS PKMKK",
+            tagline: "Siswa Berprestasi & Pembelajar Aktif",
+            tentang_saya: "Halo! Saya Yongki Irfan Maulana, seorang siswa kelas IX di MTSN 3 IBS PKMKK. Saya adalah pribadi yang antusias dalam belajar dan selalu berusaha memberikan yang terbaik dalam setiap kegiatan. Saya memiliki minat yang besar terhadap teknologi, sains, dan pengembangan diri."
+        };
+
+        // Update UI based on config
+        async function onConfigChange(config) {
+            // Update nama
+            const nama = config.nama_lengkap || defaultConfig.nama_lengkap;
+            document.getElementById('nama-display').textContent = nama;
+            document.getElementById('nama-card').textContent = nama;
+
+            // Update kelas
+            const kelas = config.kelas || defaultConfig.kelas;
+            document.getElementById('kelas-display').textContent = kelas;
+            document.getElementById('kelas-card').textContent = kelas;
+
+            // Update umur
+            const umur = config.umur || defaultConfig.umur;
+            document.getElementById('umur-display').textContent = umur;
+            document.getElementById('umur-card').textContent = umur;
+
+            // Update sekolah
+            const sekolah = config.sekolah || defaultConfig.sekolah;
+            document.getElementById('sekolah-display').textContent = sekolah;
+
+            // Update tagline
+            const tagline = config.tagline || defaultConfig.tagline;
+            document.getElementById('tagline-display').textContent = tagline;
+
+            // Update tentang saya
+            const tentang = config.tentang_saya || defaultConfig.tentang_saya;
+            document.getElementById('tentang-display').textContent = tentang;
+        }
+
+        // Map to edit panel values
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["nama_lengkap", config.nama_lengkap || defaultConfig.nama_lengkap],
+                ["kelas", config.kelas || defaultConfig.kelas],
+                ["umur", config.umur || defaultConfig.umur],
+                ["sekolah", config.sekolah || defaultConfig.sekolah],
+                ["tagline", config.tagline || defaultConfig.tagline],
+                ["tentang_saya", config.tentang_saya || defaultConfig.tentang_saya]
+            ]);
+        }
+
+        // Map to capabilities (no recolorables for this portfolio)
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99eb7014109991bd',t:'MTc2MzE3NDk5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
